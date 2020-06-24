@@ -1,0 +1,8 @@
+.main-content {
+  background-color: white;
+  width: 80vw;
+  padding: 2rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
