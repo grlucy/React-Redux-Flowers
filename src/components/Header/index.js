@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
+import "./header.css";
+
 function Header() {
   const location = useLocation();
 
@@ -12,25 +14,33 @@ function Header() {
           <div className="flex-head nav">
             <Link
               to="/"
-              className={location === "/" ? "nav-active" : "nav-inactive"}
+              className={
+                location.pathname === "/" ? "nav-active" : "nav-inactive"
+              }
             >
               Home
             </Link>
             <Link
               to="/red"
-              className={location === "/red" ? "nav-active" : "nav-inactive"}
+              className={
+                location.pathname === "/red" ? "nav-active" : "nav-inactive"
+              }
             >
               Red Flowers
             </Link>
             <Link
               to="/blue"
-              className={location === "/blue" ? "nav-active" : "nav-inactive"}
+              className={
+                location.pathname === "/blue" ? "nav-active" : "nav-inactive"
+              }
             >
               Blue Flowers
             </Link>
           </div>
         </nav>
-        <p>You have liked X flowers!</p>
+        <p className="like-num">
+          <i class="fa fa-heart" aria-hidden="true"></i> X
+        </p>
       </div>
     </header>
   );

@@ -1,0 +1,30 @@
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  background-clip: text;
+  background: -webkit-linear-gradient(45deg, #09009f, #00ff95);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.flex-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav a {
+  margin: 0 0.5rem;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+.nav-active {
+  font-weight: 700;
+  color: #333;
+}
+.nav-inactive {
+  font-weight: 300;
+  color: #aaa;
+}
+.like-num {
+  color: rgb(214, 51, 51);
+}
