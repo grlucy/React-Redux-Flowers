@@ -3,7 +3,9 @@ import React from "react";
 function NoMatch() {
   return (
     <>
-      <p>This is NoMatch</p>
+      <p className="cent">
+        <b>Error!</b> This page does not exist.
+      </p>
     </>
   );
 }
