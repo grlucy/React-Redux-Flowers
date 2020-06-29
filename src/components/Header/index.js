@@ -39,7 +39,7 @@ function Header() {
           </div>
         </nav>
         <p className="like-num">
-          <i class="fa fa-heart" aria-hidden="true"></i> X
+          <i className="fa fa-heart" aria-hidden="true"></i> X
         </p>
       </div>
     </header>
