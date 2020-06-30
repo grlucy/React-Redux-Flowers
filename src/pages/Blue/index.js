@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import Image from "../../components/Image";
+import ImageContainer from "../../components/ImageContainer";
 import API from "../../utils/API";
 
 function Blue() {
@@ -16,7 +17,7 @@ function Blue() {
   }, []);
 
   return (
-    <div>
+    <ImageContainer>
       {blueFlowers.map((flower) => (
         <Image
           key={flower.id}
@@ -24,7 +25,7 @@ function Blue() {
           tags={flower.tags}
         />
       ))}
-    </div>
+    </ImageContainer>
   );
 }
 
