@@ -23,6 +23,8 @@ function Blue() {
           key={flower.id}
           previewURL={flower.previewURL}
           tags={flower.tags}
+          author={flower.user}
+          pageURL={flower.pageURL}
         />
       ))}
     </ImageContainer>
