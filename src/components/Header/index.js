@@ -1,10 +1,12 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 import "./header.css";
 
 function Header() {
   const location = useLocation();
+  const numLikes = useSelector((state) => state.numLikes);
 
   return (
     <header>
@@ -39,7 +41,7 @@ function Header() {
           </div>
         </nav>
         <p className="like-num">
-          <i className="fa fa-heart" aria-hidden="true"></i> X
+          <i className="fa fa-heart" aria-hidden="true"></i> {numLikes}
         </p>
       </div>
     </header>
